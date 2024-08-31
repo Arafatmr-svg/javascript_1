@@ -56,7 +56,7 @@ let user={
     num:"342wr2"
 }
 let user2=user
-user2.email="asfa@"
+user2.email="asfaxzcz@"
 console.log(user.email);
 console.log(user2.email);
 
