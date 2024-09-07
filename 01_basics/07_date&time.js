@@ -16,13 +16,29 @@ const date=new Date()
 // let myCreateddate= new Date("2024-09-05")
 // console.log(myCreateddate.toDateString());
 let myCreateddate= new Date("01-13-2024")
-console.log(myCreateddate.toLocaleString());
+// console.log(myCreateddate.toLocaleString());
 
 
 
 let myTimeStamp= Date.now()
-console.log(myTimeStamp);
-console.log(myCreateddate.getTime());
-console.log();
+// console.log(myTimeStamp);
+// console.log(myCreateddate.getTime());
+// console.log(myTimeStamp/1000);
+console.log(Date.now()/1000);
+
+console.log(Math.floor(Date.now()/1000));///to convrt ms to s
+
+let newDate=new Date()
+console.log(newDate);
+console.log(newDate.getDay());
+console.log(newDate.getMonth());
+
+
+
+console.log(newDate.toLocaleString('default',{
+    weekday: "long",
+    timeZone: ""
+}))
+
 
 
