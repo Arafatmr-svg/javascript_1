@@ -5,7 +5,8 @@
 //object literals
 
 
-const mySym=Symbol("key1")
+const mySym=Symbol("key1") // declare a symbol
+
 
 const JsUser={
     name:"Arafat",
