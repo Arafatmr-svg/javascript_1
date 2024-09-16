@@ -16,3 +16,5 @@ function func1(){
 }
 
 )()
+
+()()// iife
