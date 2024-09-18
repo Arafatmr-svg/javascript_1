@@ -18,6 +18,15 @@ const regularUser={
     }
 
 }
+
+let obj={
+    a:"2",
+    b:"3",
+    c:"4"
+}
+
+console.log(Object.keys(obj)); // object to Array
+
 // Object.freeze(regularUser)
 //  regularUser.email="xfgh@"
 // console.log(regularUser.fullName.userFullName.lastName);
