@@ -4,12 +4,12 @@ let a=300 ///---- global scope
 if (true){
     let a= 10
     const b=20
-    // var c=30         //----block scope
+    var c=30         //----block scope
     // console.log("Inner : ", a);  
 }
 // console.log(a);
 // // console.log(b);
-// // console.log(c);
+// console.log(c);
 
 
 
@@ -42,14 +42,14 @@ if(true){
 //----------------------------interesting-----------------------------
 
 
-console.log(add1(5))
+// console.log(add1(5))
 
 function add1(num){
 return num + 1
 }
 
 
-console.log(add2(5));
+// console.log(add2(5));
 
 const add2=function(num){ // function expression are not hoisted
 
