@@ -8,10 +8,10 @@ const user={
         
     }
 }
-// user.welcomeMessage()
-// user.username="Sam"
-// user.welcomeMessage()
-
+user.welcomeMessage()
+user.username="Sam"
+user.welcomeMessage()
+// 
 // console.log(this);
 
 
@@ -48,7 +48,7 @@ const user={
 
 const addTwo=(num1,num2)=> ({username:"Arafat"})
 
-console.log(addTwo(2,4))
+// console.log(addTwo(2,4))
 
 
 const myArray=[2,3,45,6,7]
