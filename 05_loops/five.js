@@ -8,7 +8,7 @@ coding.forEach( function (val) {
 }  )                   //callback function does not contain name
 
 coding.forEach(  (val)=> {
-// console.log(val);
+console.log(val);
 
 }  )                   //callback function does not contain name
 

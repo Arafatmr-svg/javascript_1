@@ -1,11 +1,11 @@
-// const coding=["js","c++","python","ruby"]
+const coding=["js","c++","python","ruby"]
 
-// const values= coding.forEach( (item)=>{
-//     // console.log(item);
-//     return item
+const values= coding.forEach( (item)=>{
+    // console.log(item);
+    return item
     
-// })
-// console.log(values);
+})
+console.log(values);
 
 
 
