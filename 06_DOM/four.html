@@ -45,5 +45,35 @@ addOptiLanguage("Java")
    const newli=  document.createElement("li")
  newli.textContent="TypeScript"
  second.replaceWith(newli)
+
+
+
+ //edit
+
+
+ const first=document.querySelector("li:first-child")
+
+ const newl=document.createElement("li")
+ newl.innerHTML="Python"
+ first.replaceWith(newl)
+
+ //edit
+
+ const third=document.querySelector("li:last-child")
+
+ third.outerHTML="<li>Rubby</li>"
+
+
+    //  remove
+const last=document.querySelector("li:nth-child(2)")
+
+console.log(last);
+
+last.remove()
+
+
 </script>
+
+
+
 </html>
