@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -12,12 +12,16 @@ div{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
  #box1{
     height: 150px;
     width: 150px;
     background-color: red;
+    text-align: center ;
+    text-overflow: clip;
+    
  }
  #box2{
     height:150px ;
@@ -55,4 +59,56 @@ div{
         width: 100px;
         background-color:green;
      }
+    } */
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
     }
+    body {
+        background-color: black;
+        color: wheat;
+    }
+    div {
+        background-color: #ddc4c4;
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; /* Center items vertically */
+    }
+    
+    .button {
+        height: 150px;
+        width: 150px;
+        display: flex;
+        align-items: center; /* Center text vertically */
+        justify-content: center; /* Center text horizontally */
+        color: white;
+        font-size: 20px;
+        cursor: pointer; /* Show pointer on hover */
+    }
+    
+    #box1 {
+        background-color: red;
+    }
+    #box2 {
+        background-color: blue;
+    }
+    #box3 {
+        background-color: gray;
+    }
+    #box4 {
+        background-color: green;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .button {
+            width: 100px;
+            height: 100px;
+            font-size: 16px;
+        }
+    }
+    
