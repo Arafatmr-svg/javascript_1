@@ -25,41 +25,39 @@ if (playGame) {
 }
 
 function validateGuess(guess) {
-  if(isNaN(guess)){
-    alert("Please enter a valid number")
-  } else if(guess<1){
-    alert("Please enter a  number more than 1")
-  } else if(guess>100){
-    alert("Please enter a  number less than 100")
-  }
-  else{
-    prevGuess.push(guess)
-    if(numGuess<=11){
-displayGuess(guess)
-displayMessage(`Game over.Random Number was ${randomNumber}`)
-endGame();
-}
-else{
-displayGuess(guess)
-checkGuess(guess)
-}
+  if (isNaN(guess)) {
+    alert('PLease enter a valid number');
+  } else if (guess < 1) {
+    alert('PLease enter a number more than 1');
+  } else if (guess > 100) {
+    alert('PLease enter a  number less than 100');
+  } else {
+    prevGuess.push(guess);
+    if (numGuess === 11) {
+      displayGuess(guess);
+      displayMessage(`Game Over. Random number was ${randomNumber}`);
+      endGame();
+    } else {
+      displayGuess(guess);
+      checkGuess(guess);
     }
   }
+}
 
 function checkGuess(guess) {
   if (guess === randomNumber) {
     displayMessage(`You guessed it right`);
     endGame();
   } else if (guess < randomNumber) {
-    displayMessage(`Number is Too low`);
+    displayMessage(`Number is TOOO low`);
   } else if (guess > randomNumber) {
-    displayMessage(`Number is Too High`);
+    displayMessage(`Number is TOOO High`);
   }
 }
 
 function displayGuess(guess) {
   userInput.value = '';
-  guessSlot.innerHTML += `${guess},  `;
+  guessSlot.innerHTML += `${guess}, `;
   numGuess++;
   remaining.innerHTML = `${11 - numGuess} `;
 }
@@ -92,4 +90,5 @@ function newGame() {
     playGame = true;
   });
 }
+
 
