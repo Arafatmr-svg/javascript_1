@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+     content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body id="body" style="background-color: rgb(178, 182, 182);">
+    <h1>Learn JavaScript</h1>
+    <button id ="start">Start</button>
+    <button id="stop"> Stop</button>
+</body>
+<script>
+  
+document.querySelector("#start")
+.addEventListener("click",function(){
+    console.log("success");
+     const stop=setInterval(function(){
+    console.log("current time :",Date.now());
+    
+     
+},2000)
+
+document.querySelector("#stop")
+.addEventListener("click",function(){
+
+    clearTimeout(stop)
+    
+    console.log("stopped successfully");
+    
+})
+})
+
+</script>
+</html>
