@@ -7,19 +7,13 @@ body{
     background-color: black;
      color: antiquewhite;
       text-align: center;
+      display: flex;
+      /* align-items: center; */
+      flex-direction: column;
 }
-.card{
-    height: 50vh;
-width: 30vw;
-margin-left :500px; 
+.container{
+    display: inline;
+    justify-content: center;
 }
-.card-img-top{
 
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-}
-/* }
- div img{
-    height: 40px;
- } */
+
